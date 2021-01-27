@@ -1,10 +1,16 @@
 <template>
+  <font-awesome-icon icon="user-secret" />
+  <font-awesome-icon :icon="['fab', 'font-awesome']" />
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faFontAwesome } from '@fortawesome/free-brands-svg-icons'
+
+library.add(faFontAwesome)
 
 export default {
   name: 'App',
