@@ -1,26 +1,31 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <fa-icon :icon="['fas', 'spinner']" size="4x" :spin="spin" />
+    
+    <fa-layer class="fa-4x">
+      <fa-icon :icon="['fas', 'circle']" style="color: Tomato"/>
+      <fa-icon :icon="['fas', 'times']" transform="shrink-8" inverse />
+    </fa-layer>
+    
+    <fa-layer class="fa-4x">
+      <fa-icon :icon="['fas', 'tag']" style="color: forestgreen"/>
+      <fa-layer-text value="NEW" transform="shrink-13 rotate-45" style="color: white" />
+    </fa-layer>
+
+    <fa-icon :icon="['fas', 'grin-hearts']" size="4x" :mask="['fas', 'coffee']" transform="shrink-8 up-2 left-1" />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+
+  data () {
+    return {
+      spin: true
+    }
+  },
+
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

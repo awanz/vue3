@@ -1,24 +1,10 @@
-# vue3
+# VUEJS 3 + FONTAWESOME
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+```npm
+npm i --save @fortawesome/fontawesome-svg-core
+npm i --save @fortawesome/free-solid-svg-icons
 ```
 
-### Compiles and minifies for production
+```console
+npm i --save @fortawesome/vue-fontawesome@prerelease
 ```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
