@@ -1,17 +1,27 @@
 <template>
-  <div class="flex justify-center">
-    <img alt="Vue logo" src="./assets/logo.png" class="flex flex-wrap content-center">
-  </div>
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <base-layout>
+    <template v-slot:header>
+      <h1>Here might be a page title</h1>
+    </template>
+
+    <template v-slot:default>
+      <p>A paragraph for the main content.</p>
+      <p>And another one.</p>
+    </template>
+
+    <template v-slot:footer>
+      <p>Here's some contact info</p>
+    </template>
+  </base-layout>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Layout from './components/Layout.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    'base-layout' : Layout
   }
 }
 </script>
