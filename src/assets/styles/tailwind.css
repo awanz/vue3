@@ -1,3 +1,71 @@
 @tailwind base;
 @tailwind components;
+.btn {
+    @apply m-2 px-6 py-2 rounded-lg inline-block text-white w-auto;
+}
+
+.btn-icon {
+    @apply m-2 px-6 py-2 rounded-lg inline-block inline-flex items-center text-white w-28;
+}
+
+.btn-primary {
+    @apply bg-blue-400;    
+}
+
+.btn-primary:hover {
+    @apply bg-blue-500;    
+}
+
+.btn-primary:focus {
+    @apply bg-blue-300 outline-none;    
+}
+
+.btn-success {
+    @apply bg-green-400;    
+}
+
+.btn-success:hover {
+    @apply bg-green-500;    
+}
+
+.btn-success:focus {
+    @apply bg-green-300 outline-none;    
+}
+
+.btn-default {
+    @apply bg-gray-400;    
+}
+
+.btn-default:hover {
+    @apply bg-gray-500;    
+}
+
+.btn-default:focus {
+    @apply bg-gray-300 outline-none;    
+}
+
+.btn-warning {
+    @apply bg-red-600;    
+}
+
+.btn-warning:hover {
+    @apply bg-red-500;    
+}
+
+.btn-warning:focus {
+    @apply bg-red-300 outline-none;    
+}
+
+.btn-white {
+    @apply bg-gray-100 text-gray-800;    
+}
+
+.btn-white:hover {
+    @apply bg-gray-300;    
+}
+
+.btn-white:focus {
+    @apply bg-gray-200 outline-none;    
+}
+
 @tailwind utilities;

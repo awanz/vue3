@@ -1,17 +1,43 @@
 <template>
-  <div class="flex justify-center">
-    <img alt="Vue logo" src="./assets/logo.png" class="flex flex-wrap content-center">
-  </div>
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  
+  <Button @click="test">
+    <template #icon>
+      <font-awesome-icon icon="user-secret" size="lg"/>
+    </template>
+    <span>
+      {{ label }}
+    </span>
+  </Button>
+
+  <Btn>
+    <template #icon>
+      <font-awesome-icon icon="user-secret" size="lg"/>
+    </template>
+    <template #label>
+      Hai 
+    </template>
+  </Btn>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Button from './components/Button.vue'
+import Btn from './components/Btn.vue'
 
 export default {
   name: 'App',
+  data() {
+    return {
+      label: "Order Now"
+    }
+  },
+  methods: {
+    test(){
+      console.log("hais");
+    }
+  },
   components: {
-    HelloWorld
+    Button,
+    Btn
   }
 }
 </script>
